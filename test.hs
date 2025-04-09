@@ -354,3 +354,50 @@ comparar :: Int -> Int -> Int
 comparar a b   | sumarUltimoDosDigitos a > sumarUltimoDosDigitos b  = -1
                 | sumarUltimoDosDigitos b > sumarUltimoDosDigitos a = 1
                 | otherwise = 0 
+
+
+
+
+--9a
+f1 :: Float-> Float
+ f1 n | n == 0 = 1
+ | otherwise = 0
+
+ --esta funcion hace que si el numero ingresado es igual a cero el resultado sera uno, en caso contrario sera 0
+
+
+ --9b
+ f2 :: Float-> Float
+ f2 n | n == 1 = 15
+ | n ==-1 =-15
+--en este caso si es 1 el resultado es 15, si es -1 el resultado es -15
+
+
+--9c
+
+f3 :: Float-> Float
+ f3 n | n <= 9 = 7
+ | n >= 3 = 5
+-- en este caso si el numero ingresado es menor o igual a 9 da 7, pero si es mayor a igual a 3 da 5. en los casos 9,8,6,5,4 dara 7
+
+ --9d
+ f4 :: Float-> Float-> Float
+ f4 x y = (x+y)/2
+
+--este algoritmo hace un promedio entre ambos numeros ingresados
+
+
+--9e
+f5 :: (Float, Float)-> Float
+ f5 (x, y) = (x+y)/2
+ 
+--este algoritmo hace lo mismo que el algoritmo anterior, pero este se ingresa dos valores por medio de una tupla.
+
+--9f
+f6 :: Float-> Int-> Bool
+ f6 a b = truncate a == b
+
+
+ --este algoritmo devuelve verdadero si el valor entero mas cercano a  es igual a b, en otro caso devuelve false.
+
+ 
